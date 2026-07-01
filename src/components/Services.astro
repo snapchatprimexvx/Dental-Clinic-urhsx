@@ -1,0 +1,188 @@
+---
+// Services.astro
+// Core treatments styled as Apple Store utility cards (white background, thin hairline border, 18px rounding)
+---
+
+<section id="services" class="w-full bg-white py-20 border-b border-hairline">
+  <div class="max-w-[1068px] mx-auto px-6">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-[680px] mx-auto mb-16 reveal">
+      <span class="text-xs font-semibold text-primary uppercase tracking-widest mb-2 block">Clinical Excellence</span>
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl text-ink leading-tight tracking-tight mb-4">
+        Treatment pathways centered around your comfort.
+      </h2>
+      <p class="text-sm sm:text-base text-ink-muted-48 leading-relaxed max-w-[550px] mx-auto">
+        State-of-the-art procedures with transparent pricing. Every treatment is designed to minimize discomfort and maximize longevity.
+      </p>
+    </div>
+
+    <!-- Services Grid: 3-col desktop, 2-col tablet, 1-col mobile -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Preventive Care -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal">
+        <div>
+          <!-- Icon -->
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0110 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0114 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Preventive Care & Cleaning</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Detailed oral diagnostics, digital X-rays, scaling (cleaning), polishing, and fluoride coatings to prevent decay and maintain fresh breath.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Starting at ₹999</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Painless Root Canal -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal delay-100">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Painless Root Canal (RCT)</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Save infected or damaged teeth with state-of-the-art rotary endodontic machines. Single-sitting procedures under local anesthesia.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Starting at ₹3,500</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: Advanced Dental Implants -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal delay-200">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.827m11.379-8.16l1.15-.827M8.14 21.27l.707-1.03m7.45-.808l.707-1.03M12 3v1.5m0 15V21m0-16.5A7.5 7.5 0 004.5 12M12 4.5A7.5 7.5 0 0119.5 12" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Advanced Dental Implants</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Permanent, natural-looking replacement for missing teeth. Certified biocompatible titanium implants with high-strength zirconia crowns.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Starting at ₹18,000</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: Cosmetic Smile Design -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Cosmetic & Smile Designing</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Transform chipped, discolored, or uneven teeth. Procedures include composite bonding, high-strength porcelain veneers, and laser teeth whitening.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Starting at ₹1,500</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5: Invisalign & Clear Aligners -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal delay-100">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v16.5h16.5V3.75H3.75zm12 5.25a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Invisalign & Clear Aligners</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Straighten misaligned teeth discreetly without metal brackets. Removable, comfortable, and customized 3D printed smartaligners.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Free Consult + Aligner Plans</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6: Pediatric Dentistry -->
+      <div class="bg-white border border-hairline rounded-lg p-8 flex flex-col justify-between hover:border-primary/30 transition-all duration-300 relative group active-scale reveal delay-200">
+        <div>
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5.5 h-5.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94-3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-ink mb-2 group-hover:text-primary transition-colors">Pediatric (Kids) Dentistry</h3>
+          <p class="text-[13px] text-ink-muted-48 leading-relaxed mb-6">
+            Gentle dental care for kids and teens. Cavity prevention, milk teeth extractions, space maintainers, and stress-free checkups.
+          </p>
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between border-t border-hairline/60 pt-4 mb-4">
+            <span class="text-xs text-ink-muted-48">Estimated Pricing</span>
+            <span class="text-sm font-semibold text-ink">Starting at ₹799</span>
+          </div>
+          <a href="#contact" class="text-xs font-semibold text-primary inline-flex items-center gap-1 hover:underline">
+            Request Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

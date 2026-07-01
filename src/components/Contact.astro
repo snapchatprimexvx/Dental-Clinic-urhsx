@@ -1,0 +1,239 @@
+---
+const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
+---
+
+<section id="contact" class="py-16 md:py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+      
+      <!-- Contact Details & Map Column -->
+      <div class="lg:col-span-6 flex flex-col justify-between space-y-8 reveal">
+        <div>
+          <span class="text-primary font-semibold text-sm tracking-wider uppercase">Get In Touch</span>
+          <h2 class="font-display font-semibold text-3xl sm:text-4xl text-ink tracking-tight mt-1">
+            Visit Our Clinic
+          </h2>
+          <div class="h-1 w-12 bg-primary mt-4 rounded-full" />
+          <p class="mt-4 text-ink/70 text-base">
+            Have questions or want to speak with us before booking? We are here to help you. Reach out via phone, email, or visit us.
+          </p>
+        </div>
+
+        <!-- Contact Info Stack -->
+        <div class="space-y-4">
+          <!-- Address -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-primary/10 p-2.5 rounded-lg text-primary shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25s-7.5-4.108-7.5-11.25a7.5 7.5 0 1115 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm text-ink">Clinic Location</h4>
+              <p class="text-ink/75 text-sm sm:text-base mt-0.5">12, Connaught Circus, Block E, Connaught Place, New Delhi, Delhi 110001</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-primary/10 p-2.5 rounded-lg text-primary shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.622c0-1.295 1.05-2.345 2.345-2.345h1.72c.62 0 1.18.39 1.39.973l.764 2.112c.237.653.03 1.385-.503 1.815l-1.127.91a13.38 13.38 0 0 0 5.762 5.762l.91-1.127c.43-.534 1.162-.74 1.815-.503l2.112.764c.583.21.973.77.973 1.39v1.72c0 1.295-1.05 2.345-2.345 2.345 0-9.28-7.52-16.8-16.8-16.8Z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm text-ink">Phone Numbers</h4>
+              <p class="text-ink/75 text-sm sm:text-base mt-0.5">
+                <a href="tel:+919876543210" class="hover:text-primary transition-colors">+91 98765 43210</a> • 
+                <a href="tel:+911123456789" class="hover:text-primary transition-colors"> 011 2345 6789</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-primary/10 p-2.5 rounded-lg text-primary shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm text-ink">Email Address</h4>
+              <p class="text-ink/75 text-sm sm:text-base mt-0.5">
+                <a href="mailto:info@apexdental.com" class="hover:text-primary transition-colors">info@apexdental.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Working Hours -->
+          <div class="flex items-start space-x-4">
+            <div class="bg-primary/10 p-2.5 rounded-lg text-primary shrink-0 mt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-sm text-ink">Working Hours</h4>
+              <div class="text-ink/75 text-xs sm:text-sm mt-0.5 space-y-0.5">
+                <p>Monday – Saturday: 09:00 AM – 08:00 PM</p>
+                <p>Sunday: 10:00 AM – 02:00 PM (Prior Bookings Only)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Google Maps -->
+        <div class="map-container relative w-full h-64 rounded-xl overflow-hidden border border-hairline bg-canvas-parchment mt-4">
+          <iframe 
+            title="Apex Dental Clinic Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.996162388056!2d77.216723!3d28.630452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b6000001%3A0x67399ba5d3923c8e!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1688190000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Appointment Form Column -->
+      <div id="appointment-form" class="lg:col-span-6 reveal" style="transition-delay: 100ms;">
+        <div class="bg-canvas-parchment border border-hairline rounded-xl p-6 sm:p-8 flex flex-col h-full justify-between">
+          <div>
+            <h3 class="font-display font-semibold text-xl sm:text-2xl text-ink">Book Your Appointment</h3>
+            <p class="text-ink/60 text-xs sm:text-sm mt-1 mb-6">Fill in the details below, and our care coordinator will reach out to confirm your timing slot within 2 hours.</p>
+            
+            <form id="clinic-appointment-form" class="space-y-4">
+              <input type="hidden" name="access_key" value={web3formsKey} />
+              <input type="hidden" name="subject" value="New Appointment Booking - Apex Dental Clinic" />
+              <!-- Name -->
+              <div>
+                <label for="form-name" class="block text-xs font-semibold text-ink/70 uppercase tracking-wider mb-1.5">Full Name <span class="text-red-500">*</span></label>
+                <input 
+                  type="text" 
+                  id="form-name" 
+                  name="name" 
+                  placeholder="Enter your name" 
+                  required 
+                  class="w-full bg-white border border-hairline focus:border-primary focus:ring-1 focus:ring-primary rounded-lg px-4 py-3 text-sm text-ink focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label for="form-phone" class="block text-xs font-semibold text-ink/70 uppercase tracking-wider mb-1.5">Phone Number <span class="text-red-500">*</span></label>
+                <input 
+                  type="tel" 
+                  id="form-phone" 
+                  name="phone" 
+                  placeholder="Enter 10-digit mobile number" 
+                  pattern="[0-9]{10}"
+                  required 
+                  class="w-full bg-white border border-hairline focus:border-primary focus:ring-1 focus:ring-primary rounded-lg px-4 py-3 text-sm text-ink focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="form-email" class="block text-xs font-semibold text-ink/70 uppercase tracking-wider mb-1.5">Email Address</label>
+                <input 
+                  type="email" 
+                  id="form-email" 
+                  name="email" 
+                  placeholder="Enter your email address" 
+                  class="w-full bg-white border border-hairline focus:border-primary focus:ring-1 focus:ring-primary rounded-lg px-4 py-3 text-sm text-ink focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="form-message" class="block text-xs font-semibold text-ink/70 uppercase tracking-wider mb-1.5">Message / Health Concern</label>
+                <textarea 
+                  id="form-message" 
+                  name="message" 
+                  rows="4" 
+                  placeholder="Tell us briefly about your tooth pain or treatment needed (e.g. Root Canal, Teeth Cleaning)"
+                  class="w-full bg-white border border-hairline focus:border-primary focus:ring-1 focus:ring-primary rounded-lg px-4 py-3 text-sm text-ink focus:outline-none resize-none transition-colors"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="pt-2">
+                <button 
+                  type="submit" 
+                  id="form-submit-btn"
+                  class="w-full bg-primary hover:bg-primary-focus text-white font-medium py-3 px-4 rounded-full shadow-soft transition-all duration-200 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary-focus focus:ring-offset-2 flex items-center justify-center space-x-2"
+                >
+                  <span id="btn-text">Confirm Booking Request</span>
+                  <span id="btn-spinner" class="hidden">
+                    <svg class="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Custom Premium Success Toast Alert -->
+  <div 
+    id="success-toast" 
+    class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-ink text-white py-3.5 px-6 rounded-xl shadow-2xl border border-white/10 flex items-center space-x-3 z-50 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none"
+  >
+    <div class="bg-primary p-1.5 rounded-full text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+      </svg>
+    </div>
+    <div>
+      <h5 class="text-sm font-bold">Booking Request Sent!</h5>
+      <p class="text-xs text-white/70">Our care coordinator will call you back shortly.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('clinic-appointment-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('form-submit-btn') as HTMLButtonElement;
+  const btnText = document.getElementById('btn-text');
+  const btnSpinner = document.getElementById('btn-spinner');
+  const toast = document.getElementById('success-toast');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (submitBtn) submitBtn.disabled = true;
+    btnText?.classList.add('hidden');
+    btnSpinner?.classList.remove('hidden');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form),
+      });
+
+      if (res.ok) {
+        form.reset();
+        if (toast) {
+          toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+          toast.classList.add('opacity-100', 'translate-y-0');
+          setTimeout(() => {
+            toast.classList.remove('opacity-100', 'translate-y-0');
+            toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+          }, 4500);
+        }
+      }
+    } catch (_err) {
+      // silently fail
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+      btnSpinner?.classList.add('hidden');
+      btnText?.classList.remove('hidden');
+    }
+  });
+</script>

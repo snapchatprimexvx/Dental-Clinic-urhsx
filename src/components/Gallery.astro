@@ -1,0 +1,71 @@
+---
+const images = [
+  {
+    src: "/images/clinic-1.png",
+    alt: "State of the art dental treatment room and clean patient chair",
+    title: "Modern Treatment Room"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80",
+    alt: "Warm and bright dental clinic reception area and front desk",
+    title: "Reception & Lobby"
+  },
+  {
+    src: "/images/clinic-2.png",
+    alt: "Sterilized high-end dental examination instruments and tools",
+    title: "Sterilized Medical Equipment"
+  },
+  {
+    src: "/images/clinic-3.png",
+    alt: "Doctor providing patient consultation with digital dental scans",
+    title: "Digital Consultations"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80",
+    alt: "Dentist performing careful dental checkup on a patient",
+    title: "Advanced Diagnostics"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
+    alt: "Happy satisfied patient showing off a beautiful white healthy smile",
+    title: "Smile Transformations"
+  }
+];
+---
+<section id="gallery" class="py-20 bg-canvas-parchment">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="mx-auto max-w-3xl text-center mb-16 reveal">
+      <span class="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Our Facility</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-ink">
+        Clinic Gallery
+      </h2>
+      <p class="mt-4 text-base text-ink/60">
+        Take a virtual tour of our modern, clean, and welcoming dental clinic environment equipped with advanced dental technologies.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {images.map((img, idx) => (
+        <div class="reveal group relative overflow-hidden rounded-lg shadow-soft border border-hairline bg-white aspect-4/3 cursor-pointer">
+          <!-- Image -->
+          <img 
+            src={img.src} 
+            alt={img.alt} 
+            class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500 ease-out"
+            loading="lazy"
+          />
+          <!-- Hover Scrim Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-semibold uppercase tracking-wider text-primary-on-dark mb-1">Clinic View</span>
+            <h3 class="text-base font-bold text-white leading-tight">{img.title}</h3>
+            <p class="text-xs text-body-muted mt-1 leading-normal">{img.alt}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

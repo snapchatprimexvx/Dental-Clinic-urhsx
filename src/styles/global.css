@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0066cc;
+  --color-primary-focus: #0071e3;
+  --color-primary-on-dark: #2997ff;
+  --color-ink: #1d1d1f;
+  --color-canvas-parchment: #f5f5f7;
+  --color-surface-pearl: #fafafc;
+  --color-hairline: #e0e0e0;
+  --color-divider-soft: #f0f0f0;
+  
+  --radius-xs: 5px;
+  --radius-sm: 8px;
+  --radius-md: 11px;
+  --radius-lg: 18px;
+  
+  --font-sans: "Inter", "SF Pro Text", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif";
+  --font-display: "Inter", "SF Pro Display", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif";
+  
+  --shadow-product: rgba(0, 0, 0, 0.12) 3px 5px 30px 0px;
+  --shadow-soft: rgba(0, 0, 0, 0.04) 0 4px 20px;
+  
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for sticky nav */
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal initial state class */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom styles for Google Map iframe */
+.map-container iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+}
+
+/* Tailwind v4 Custom Utilities */
+@utility frosted-glass {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(245, 245, 247, 0.8);
+}
+
+@utility active-scale {
+  transition: transform 0.12s cubic-bezier(0.25, 1, 0.5, 1);
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+

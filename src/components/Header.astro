@@ -1,0 +1,144 @@
+---
+// Header.astro
+// Pinned dual navigation bar implementing Apple-style design
+---
+
+<header class="w-full relative z-50">
+  <!-- Emergency/Info Top Bar (global-nav style, 44px height) -->
+  <div class="w-full h-11 bg-black text-[#fafafa] flex items-center justify-between px-4 sm:px-8 text-xs font-sans border-b border-white/10 tracking-[-0.12px]">
+    <div class="flex items-center gap-6">
+      <span class="flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5 text-primary-on-dark">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.514 2.018a13.717 13.717 0 01-8.217-8.217l2.018-1.514c.362-.272.528-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+        </svg>
+        <a href="tel:+919876543210" class="hover:text-primary-on-dark transition-colors font-medium">+91 98765 43210</a>
+      </span>
+      <span class="hidden md:inline-flex items-center gap-1.5 text-neutral-400">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+      </span>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="hidden sm:inline-flex items-center gap-1.5 text-neutral-400">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5 text-primary-on-dark">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+        </svg>
+        <span>Gurugram, Haryana</span>
+      </span>
+      <a href="#contact" class="text-primary-on-dark font-medium hover:underline">Get Directions</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Sticky Bar (sub-nav-frosted, 52px height) -->
+  <nav id="sticky-nav" class="w-full h-[52px] sticky top-0 border-b border-hairline frosted-glass flex items-center justify-between px-4 sm:px-8 z-40 transition-all duration-300">
+    <!-- Brand / Logo -->
+    <a href="#" class="flex items-center gap-2 group">
+      <span class="w-6 h-6 rounded-md bg-primary flex items-center justify-center text-white font-bold text-sm tracking-tighter">A</span>
+      <span class="font-display font-semibold text-lg text-ink tracking-tight group-hover:text-primary transition-colors">Apex Dental</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-ink/80 tracking-tight">
+      <a href="#services" class="hover:text-primary transition-colors">Services</a>
+      <a href="#doctor" class="hover:text-primary transition-colors">The Doctor</a>
+      <a href="#gallery" class="hover:text-primary transition-colors">Clinic Tour</a>
+      <a href="#testimonials" class="hover:text-primary transition-colors">Testimonials</a>
+      <a href="#contact" class="hover:text-primary transition-colors">Location</a>
+    </div>
+
+    <!-- Right Area: Action Pill -->
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden sm:inline-flex items-center justify-center text-xs font-semibold px-4 py-1.5 text-white bg-primary hover:bg-primary-focus rounded-full active-scale tracking-tight">
+        Book Appointment
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5 text-ink focus:outline-none" aria-label="Toggle Menu">
+        <span class="w-5 h-0.5 bg-ink transition-transform duration-200" id="hamburger-top"></span>
+        <span class="w-5 h-0.5 bg-ink transition-opacity duration-200" id="hamburger-mid"></span>
+        <span class="w-5 h-0.5 bg-ink transition-transform duration-200" id="hamburger-bot"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Collapsible Menu Grid Drawer -->
+  <div id="mobile-menu" class="hidden fixed inset-x-0 top-[96px] bg-canvas-parchment/95 backdrop-blur-xl border-b border-hairline z-35 flex-col px-6 py-8 gap-5 text-base font-medium text-ink shadow-lg transition-all duration-300">
+    <a href="#services" class="mobile-link py-2 border-b border-hairline/50">Services</a>
+    <a href="#doctor" class="mobile-link py-2 border-b border-hairline/50">The Doctor</a>
+    <a href="#gallery" class="mobile-link py-2 border-b border-hairline/50">Clinic Tour</a>
+    <a href="#testimonials" class="mobile-link py-2 border-b border-hairline/50">Testimonials</a>
+    <a href="#contact" class="mobile-link py-2 border-b border-hairline/50">Location & Timing</a>
+    <a href="#contact" class="mobile-link mt-4 w-full py-3 text-center text-white bg-primary rounded-full font-semibold active-scale">
+      Book Appointment
+    </a>
+  </div>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const stickyNav = document.getElementById('sticky-nav');
+  
+  const hamburgerTop = document.getElementById('hamburger-top');
+  const hamburgerMid = document.getElementById('hamburger-mid');
+  const hamburgerBot = document.getElementById('hamburger-bot');
+  
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  // Toggle Menu Open/Close
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+  }
+
+  function openMenu() {
+    mobileMenu?.classList.remove('hidden');
+    mobileMenu?.classList.add('flex');
+    
+    // Animate hamburger to cross
+    hamburgerTop?.classList.add('rotate-45', 'translate-y-2');
+    hamburgerMid?.classList.add('opacity-0');
+    hamburgerBot?.classList.add('-rotate-45', '-translate-y-2');
+  }
+
+  function closeMenu() {
+    mobileMenu?.classList.add('hidden');
+    mobileMenu?.classList.remove('flex');
+    
+    // Reset hamburger lines
+    hamburgerTop?.classList.remove('rotate-45', 'translate-y-2');
+    hamburgerMid?.classList.remove('opacity-0');
+    hamburgerBot?.classList.remove('-rotate-45', '-translate-y-2');
+  }
+
+  // Close menu on link click
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  // Handle nav sticky positioning offset adjustment & height scaling
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 44) {
+      stickyNav?.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'shadow-sm');
+      if (mobileMenu) {
+        mobileMenu.style.top = '52px';
+      }
+    } else {
+      stickyNav?.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'shadow-sm');
+      if (mobileMenu) {
+        mobileMenu.style.top = '96px';
+      }
+    }
+  });
+</script>
