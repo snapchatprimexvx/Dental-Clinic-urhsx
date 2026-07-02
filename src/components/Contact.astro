@@ -31,7 +31,7 @@ const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
             </div>
             <div>
               <h4 class="font-semibold text-sm text-ink">Clinic Location</h4>
-              <p class="text-ink/75 text-sm sm:text-base mt-0.5">12, Connaught Circus, Block E, Connaught Place, New Delhi, Delhi 110001</p>
+              <p class="text-ink/75 text-sm sm:text-base mt-0.5">Gate no 3, Dental World, Ali Nagar Colony, Anisabad, Patna, Bihar 800002</p>
             </div>
           </div>
 
@@ -43,10 +43,9 @@ const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
               </svg>
             </div>
             <div>
-              <h4 class="font-semibold text-sm text-ink">Phone Numbers</h4>
+              <h4 class="font-semibold text-sm text-ink">Phone Number</h4>
               <p class="text-ink/75 text-sm sm:text-base mt-0.5">
-                <a href="tel:+919876543210" class="hover:text-primary transition-colors">+91 98765 43210</a> • 
-                <a href="tel:+911123456789" class="hover:text-primary transition-colors"> 011 2345 6789</a>
+                <a href="tel:+917808255364" class="hover:text-primary transition-colors">+91 78082 55364</a>
               </p>
             </div>
           </div>
@@ -75,22 +74,21 @@ const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
             </div>
             <div>
               <h4 class="font-semibold text-sm text-ink">Working Hours</h4>
-              <div class="text-ink/75 text-xs sm:text-sm mt-0.5 space-y-0.5">
-                <p>Monday – Saturday: 09:00 AM – 08:00 PM</p>
-                <p>Sunday: 10:00 AM – 02:00 PM (Prior Bookings Only)</p>
-              </div>
+              <p class="text-ink/75 text-xs sm:text-sm mt-0.5">
+                Mon – Sun: 9:00 AM – 9:00 PM
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Embedded Google Maps -->
-        <div class="map-container relative w-full h-64 rounded-xl overflow-hidden border border-hairline bg-canvas-parchment mt-4">
+        <div class="map-embed w-full rounded-xl overflow-hidden border border-hairline bg-canvas-parchment mt-4">
           <iframe 
-            title="Apex Dental Clinic Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.996162388056!2d77.216723!3d28.630452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b6000001%3A0x67399ba5d3923c8e!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1688190000000!5m2!1sen!2sin" 
-            allowfullscreen="" 
+            title="Dental Clinic World Dental Clinic Location Map"
+            src="https://www.google.com/maps?q=Gate+no+3+Dental+World+Ali+Nagar+Colony+Anisabad+Patna+Bihar+800002&output=embed&z=16"
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
+            class="w-full h-64"
           ></iframe>
         </div>
       </div>
@@ -104,7 +102,7 @@ const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
             
             <form id="clinic-appointment-form" class="space-y-4">
               <input type="hidden" name="access_key" value={web3formsKey} />
-              <input type="hidden" name="subject" value="New Appointment Booking - Apex Dental Clinic" />
+              <input type="hidden" name="subject" value="New Appointment Booking - Dental Clinic World Dental Clinic" />
               <!-- Name -->
               <div>
                 <label for="form-name" class="block text-xs font-semibold text-ink/70 uppercase tracking-wider mb-1.5">Full Name <span class="text-red-500">*</span></label>
